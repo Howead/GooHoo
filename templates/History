@@ -1,0 +1,32 @@
+<h2>History</h2>
+<table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Query</th>
+          <th>Date</th>
+          <th>Profile</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>AC/DC</td>
+          <td>3/31/2014 4:54:02 PM</td>
+          <td>Music</td>
+
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Panda</td>
+          <td>3/31/2014 4:56:32 PM</td>
+          <td>Images</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>T-Shirts</td>
+          <td>3/31/2014 4:58:58 PM</td>
+          <td>Shopping</td>
+        </tr>
+      </tbody>
+    </table>

@@ -1,0 +1,40 @@
+<h2>Profiles</h2>
+<table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Search Engine 1</th>
+          <th>Search Engine 2</th>
+          <th>Search Engine 3</th>
+          <th>Search Engine 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Music</td>
+          <td>Google</td>
+          <td>Echonest</td>
+          <td>Grooveshark</td>
+          <td>YouTube</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Images</td>
+          <td>Google Images</td>
+          <td>Shutterstock</td>
+          <td>Bing Images</td>
+          <td>Imgur</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Shopping</td>
+          <td>Amazon</td>
+          <td>Google Shopping</td>
+          <td>Newegg</td>
+          <td>Nextag</td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="submit" class="btn btn-success">Add Profile</button>
