@@ -12,6 +12,90 @@
     	margin: 20px;
     }
 </style>
+  <style type="text/css">
+    .gsc-resultsHeader {
+width: 100%;
+display: none;
+clear: both;
+}
+form.gsc-search-box {
+font-size: 13px;
+margin-top: 0;
+display: none;
+margin-right: 0;
+margin-bottom: 4px;
+margin-left: 0;
+width: 100%;
+}
+.gsc-results .gsc-cursor-box {
+margin-bottom: 10px;
+display: none;
+}
+    </style>
+    <script src="https://www.google.com/jsapi"
+        type="text/javascript"></script>
+    <script language="Javascript" type="text/javascript">
+    //<!
+    google.load('search', '1');
+
+    function Search() {
+      // Create a search control
+      var searchControl = new google.search.SearchControl();
+
+      searchControl.addSearcher(new google.search.WebSearch());
+
+
+      var drawOptions = new google.search.DrawOptions();
+      drawOptions.setSearchFormRoot(document.getElementById("searchForm"));
+
+      searchControl.draw(searchOne, drawOptions);
+
+      // execute an inital search
+      searchControl.execute("VW GTI");
+
+      var searchControl2 = new google.search.SearchControl();
+
+      searchControl2.addSearcher(new google.search.ImageSearch());
+
+
+      var drawOptions = new google.search.DrawOptions();
+      drawOptions.setSearchFormRoot(document.getElementById("searchForm"));
+
+      searchControl2.draw(searchTwo, drawOptions);
+
+      // execute an inital search
+      searchControl2.execute("VW GTI");
+
+      var searchControl3 = new google.search.SearchControl();
+
+      searchControl3.addSearcher(new google.search.NewsSearch());
+
+
+      var drawOptions = new google.search.DrawOptions();
+      drawOptions.setSearchFormRoot(document.getElementById("searchForm"));
+
+      searchControl3.draw(searchThree, drawOptions);
+
+      // execute an inital search
+      searchControl3.execute("VW GTI");
+
+      var searchControl4 = new google.search.SearchControl();
+
+      searchControl4.addSearcher(new google.search.VideoSearch());
+
+
+      var drawOptions = new google.search.DrawOptions();
+      drawOptions.setSearchFormRoot(document.getElementById("searchForm"));
+
+      searchControl4.draw(searchFour, drawOptions);
+
+      // execute an inital search
+      searchControl4.execute("VW GTI");
+    }
+    google.setOnLoadCallback(OnLoad);
+
+    //]]>
+    </script>
 </head>
 <body>
 <nav class="navbar navbar-default" role="navigation">
@@ -83,7 +167,7 @@
                         </ul>
                     </h3>
   </div>
-  <div class="panel-body">
+  <div id="searchOne"class="panel-body">
     Results
   </div>
 </div>
@@ -112,7 +196,7 @@
                         </ul>
                     </h3>
   </div>
-  <div class="panel-body">
+  <div class="panel-body" id="searchTwo">
     Results
   </div>
 </div>
@@ -141,7 +225,7 @@
                         </ul>
                     </h3>
   </div>
-  <div class="panel-body">
+  <div class="panel-body" id="searchThree">
     Results
   </div>
 </div>
@@ -170,7 +254,7 @@
                         </ul>
                     </h3>
   </div>
-  <div class="panel-body">
+  <div class="panel-body" id="searchFour">
     Results
   </div>
 </div>
